@@ -49,44 +49,32 @@ public class CSCalculator {
 				System.out.println("Please type in the sign to use in the calculator. (+, -, *, /)");
 				Scanner InputSign = new Scanner(System.in);
 				String Sign= InputSign.nextLine();
-				
-				
-				//This if statement is for squaring your previous number
-				
-				
+
+			
 				if (Sign.equals("+")) {
 					double Number = NumOne+NumTwo;
 					 DecimalFormat f = new DecimalFormat("##.000000");
 				     System.out.println(f.format(Number));
-				     
 				     savedVariable = Number;
-					
 				}
 				if (Sign.equals("-")) {
 					double Number = NumOne-NumTwo;
 					 DecimalFormat f = new DecimalFormat("##.000000");
 				     System.out.println(f.format(Number));
-				     
 				     savedVariable = Number;
-					
 					//System.out.println(NumOne-NumTwo);
 				}
 				if (Sign.equals("*")) {
 					double Number = NumOne*NumTwo;
 					 DecimalFormat f = new DecimalFormat("##.000000");
 				     System.out.println(f.format(Number));
-				     
 				     savedVariable = Number;
-					
 				}
 				if (Sign.equals("/")) {
 					double Number = NumOne/NumTwo;
 					DecimalFormat f = new DecimalFormat("##.000000");
 				    System.out.println(f.format(Number));
-				    
 				    savedVariable = Number;
-					 
-					
 				}
 				System.out.println("Do you want to continue using this calculator? If yes, type continue.");
 				Scanner InputContinue = new Scanner(System.in);
@@ -96,7 +84,6 @@ public class CSCalculator {
 				}
 				if (BooleanContinuer.equals("continue")) {
 					Continue = true;
-					
 				}	
 			}  
 		}	
