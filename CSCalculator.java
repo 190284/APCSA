@@ -1,6 +1,9 @@
 import java.util.Scanner;
+import java.text.DecimalFormat;
 public class CSCalculator {
 	public static void main(String[] args) {
+		
+	
 		// TODO Auto-generated method stub
 		Boolean Continue = true;
 		while (Continue = true) {
@@ -10,31 +13,48 @@ public class CSCalculator {
 			System.out.println("Please type in the second number to use in the calculator.");
 			Scanner InputNumTwo = new Scanner(System.in);
 			Double NumTwo = InputNumTwo.nextDouble();
-			System.out.println("Please type in the sign to use in the calculator. (+, -, *, /");
+			System.out.println("Please type in the sign to use in the calculator. (+, -, *, /)");
 			Scanner InputSign = new Scanner(System.in);
 			String Sign= InputSign.nextLine();
 			
 			if (Sign.equals("+")) {
-				System.out.println(NumOne+NumTwo);
+				double Number = NumOne+NumTwo;
+				 DecimalFormat f = new DecimalFormat("##.000000");
+			     System.out.println(f.format(Number));
+				
 			}
 			if (Sign.equals("-")) {
-				System.out.println(NumOne-NumTwo);
+				double Number = NumOne-NumTwo;
+				 DecimalFormat f = new DecimalFormat("##.000000");
+			     System.out.println(f.format(Number));
+				
+				//System.out.println(NumOne-NumTwo);
 			}
 			if (Sign.equals("*")) {
-				System.out.println(NumOne*NumTwo);
+				double Number = NumOne*NumTwo;
+				 DecimalFormat f = new DecimalFormat("##.000000");
+			     System.out.println(f.format(Number));
+				
 			}
 			if (Sign.equals("/")) {
-				System.out.println(NumOne/NumTwo);
+				double Number = NumOne/NumTwo;
+				DecimalFormat f = new DecimalFormat("##.000000");
+			    System.out.println(f.format(Number));
+				 
+				
 			}
 			System.out.println("Do you want to continue using this calculator?");
 			Scanner InputContinue = new Scanner(System.in);
-			String BooleanContinuer = InputSign.nextLine();
+			String BooleanContinuer = InputContinue.nextLine();
 			if (BooleanContinuer.equals("no")) {
 				break;
 			}
 			if (BooleanContinuer.equals("yes")) {
 				Continue = true;
 			}
+			
 		}
 	}
+	
+		
 }
