@@ -52,9 +52,6 @@ public class CSCalculator {
 			if (BooleanContinuer.equals("yes")) {
 				Continue = true;
 			}
-			
 		}
-	}
-	
-		
+	}	
 }
