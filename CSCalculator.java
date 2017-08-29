@@ -19,26 +19,26 @@ public class CSCalculator {
 			
 			if (Sign.equals("+")) {
 				double Number = NumOne+NumTwo;
-				 DecimalFormat f = new DecimalFormat("##.000000");
+				 DecimalFormat f = new DecimalFormat("##.00000");
 			     System.out.println(f.format(Number));
 				
 			}
 			if (Sign.equals("-")) {
 				double Number = NumOne-NumTwo;
-				 DecimalFormat f = new DecimalFormat("##.000000");
+				 DecimalFormat f = new DecimalFormat("##.00000");
 			     System.out.println(f.format(Number));
 				
 				//System.out.println(NumOne-NumTwo);
 			}
 			if (Sign.equals("*")) {
 				double Number = NumOne*NumTwo;
-				 DecimalFormat f = new DecimalFormat("##.000000");
+				 DecimalFormat f = new DecimalFormat("##.00000");
 			     System.out.println(f.format(Number));
 				
 			}
 			if (Sign.equals("/")) {
 				double Number = NumOne/NumTwo;
-				DecimalFormat f = new DecimalFormat("##.000000");
+				DecimalFormat f = new DecimalFormat("##.00000");
 			    System.out.println(f.format(Number));
 				 
 				
