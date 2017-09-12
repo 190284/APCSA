@@ -1,0 +1,35 @@
+import java.awt.Image;
+import java.awt.Graphics;
+public class Coin
+{
+    //fields
+
+    private Image heads;
+    private Image tails;
+    private int FaceNow = 0; //0 is heads, 1 is tails
+
+    //Constructors
+
+    public Coin(Image headImg, Image tailImg){
+        heads = headImg;
+        tails = tailImg;
+    }
+
+    public void flip(){
+        if (FaceNow == 0)
+        {
+            FaceNow = 1;
+        } else
+        {
+            FaceNow = 0;
+        }
+    }
+
+    public void draw(Graphics g, int x, int y){    
+        if (FaceNow ==0){
+            g.drawImage(heads, x , y , null);
+        } else {
+            g.drawImage(tails, x , y , null);
+        }
+    }
+}
