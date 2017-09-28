@@ -1,0 +1,17 @@
+public class Student extends User
+{
+    private int studentId;
+    private int classOf;
+    
+    public Student(int id, String uName, int classYear)
+    {
+        super(uName, 0);
+        studentId = id;
+        classOf = classYear;
+    }
+    
+    public void printStudentInfo()
+    {
+        System.out.println("Name: " + getUserName() + "Id: " + studentId + "Class of " + classOf);
+    }
+}
