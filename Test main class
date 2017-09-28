@@ -1,0 +1,16 @@
+public class main
+{
+    public static void main(String[] args)
+    {
+        User john = new User("john.dole", 0);
+        Student pete = new Student(300121, "peter.pan", 2501);
+        Student mary = new Student(300122, "mary.tilton", 2521);
+        
+        john.printUserInfo();
+        pete.printUserInfo();
+        mary.printUserInfo();
+        
+        pete.setStatus(0);
+        pete.printUserInfo();
+    }
+}
