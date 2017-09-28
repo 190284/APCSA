@@ -1,0 +1,33 @@
+public class User
+{
+    private String userName;
+    private int status; 
+    
+    public User(String uName, int theStatus)
+    {
+        userName = uName;
+        status = theStatus;
+        
+    }
+    
+    public String getUserName()
+        {
+            return userName;
+            
+        }
+        
+    public int getStatus()
+    {
+        return status;
+    }
+    
+    public void setStatus(int stat)
+    {
+        status = stat;
+    }
+    
+    public void printUserInfo()
+    {
+        System.out.println("Username: " + userName +", status: "+ status);
+    }
+}
